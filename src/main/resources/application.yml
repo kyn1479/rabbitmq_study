@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  #  单机模式
+  rabbitmq:
+    host: 172.18.171.37
+    port: 5672
+    #集群模式
+    #    addresses: 172.19.1.40:5672,172.19.1.41:5672,172.19.1.42:5672
+    #根据实际项目情况选择单机、集群
+    username: cnu
+    password: password@123
+    virtual-host: /cnu
+    maxConcurrentConsumers: 60
+    concurrentConsumers: 30
